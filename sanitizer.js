@@ -1,8 +1,5 @@
 'use strict';
 
-// TODO: Open source!
-// Not using lodash or bluebird here to reduce dependencies :)
-
 const debug = require('debug')('loopback-ds-sanitizer-mixin');
 
 module.exports = function sanitizerMixin(Model, options) {
