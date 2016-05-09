@@ -15,7 +15,9 @@
   "scripts": {
     "pretest": "node_modules/jshint/bin/jshint .",
     "test": "mocha -R tap test",
-    "outdated": "npm outdated --depth=0"
+    "outdated": "npm outdated --depth=0",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "loopback",
