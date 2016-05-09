@@ -1,0 +1,8 @@
+{
+  "globals": {
+  },
+  "node": true,
+  "mocha": true,
+  "curly": true,
+  "esnext": true
+}
