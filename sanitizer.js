@@ -37,7 +37,8 @@ module.exports = function sanitizerMixin(Model, options) {
     removeUnicodeControlCharacters: {
       priority: 20,
       action(val) {
-        return ('' + val).replace(/[\x00-\u0009\u000B-\x1F\x7F-\x9F]/g, ''); // Excludes new line \u000A
+        // Excludes new line \u000A and tabulation \u0009
+        return ('' + val).replace(/[\x00-\u0008\u000B-\x1F\x7F-\x9F]/g, ''); 
       },
     },
   };
