@@ -1,7 +1,7 @@
 {
   "name": "loopback-ds-sanitizer-mixin",
   "description": "A mixin to automatically sanitizer attributes of loopback Models",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Foko Inc.",
   "license": "Apache-2.0",
   "repository": {
